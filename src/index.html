@@ -5,16 +5,72 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
         <!-- Remixicon -->
-        <link
-            href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
-            rel="stylesheet"
-        />
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
         <!-- Generated Stylesheet -->
         <link rel="stylesheet" href="./assets/css/output.css" />
     </head>
-    <body>
-        <h1 class="text-5xl text-primary font-poppins">
-            Let's Goo <i class="ri-arrow-right-up-line"></i>
-        </h1>
+    <body class="font-poppins">
+        <!-- header start -->
+        <header class="py-4 shadow-sm bg-white">
+            <div class="container flex items-center justify-between">
+                <!-- logo start -->
+                <a href="./index.html">
+                    <img src="./assets/img/logo-dark.png" alt="vecta - logo" class="w-32" />
+                </a>
+                <!-- logo end -->
+
+                <!-- searchbar start -->
+                <div class="w-full max-w-[350px] lg:max-w-[600px] relative md:flex hidden">
+                    <!-- search icon -->
+                    <span class="absolute left-4 top-3 text-lg text-gray-400">
+                        <i class="ri-search-2-line"></i>
+                    </span>
+                    <!-- search input -->
+                    <input
+                        type="text"
+                        class="w-full bg-gray-50 pl-12 py-3 border border-r-0 border-gray-100 rounded-l-md focus:outline-none focus:border-primary focus:border-r-0"
+                        placeholder="Search products"
+                    />
+                    <button class="bg-primary border border-primary text-white px-8 rounded-r-md hover:bg-transparent hover:text-primary duration-300">
+                        Search
+                    </button>
+                </div>
+                <!-- searchbar end -->
+
+                <!-- header icons start -->
+                <div class="flex items-center space-x-4 md:space-x-6 lg:space-x-8">
+                    <!-- wishlist -->
+                    <a href="#" class="text-center text-gray-700 hover:text-primary duration-300 relative">
+                        <div class="text-2xl">
+                            <i class="ri-heart-3-line"></i>
+                        </div>
+                        <p class="text-xs leading-3 font-medium md:block hidden">Wish List</p>
+                        <span class="absolute md:right-0 -right-3 -top-1 w-5 h-5 rounded-full flex items-center justify-center bg-primary text-white text-xs"
+                            >8</span
+                        >
+                    </a>
+
+                    <!-- cart items -->
+                    <a href="#" class="text-center text-gray-700 hover:text-primary duration-300 relative">
+                        <div class="text-2xl">
+                            <i class="ri-shopping-bag-2-line"></i>
+                        </div>
+                        <p class="text-xs leading-3 font-medium md:block hidden">Cart</p>
+                        <span class="absolute -right-3 -top-1 w-5 h-5 rounded-full flex items-center justify-center bg-primary text-white text-xs">8</span>
+                    </a>
+
+                    <!-- account -->
+                    <a href="#" class="text-center text-gray-700 hover:text-primary duration-300 relative">
+                        <div class="text-2xl">
+                            <i class="ri-user-3-line"></i>
+                        </div>
+                        <p class="text-xs leading-3 font-medium md:block hidden">Account</p>
+                        <!-- <span class="absolute right-0 -top-1 w-5 h-5 rounded-full flex items-center justify-center bg-primary text-white text-xs">8</span> -->
+                    </a>
+                </div>
+                <!-- header icons end -->
+            </div>
+        </header>
+        <!-- header end -->
     </body>
 </html>
