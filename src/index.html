@@ -28,7 +28,7 @@
                     <!-- search input -->
                     <input
                         type="text"
-                        class="w-full bg-gray-50 pl-12 py-3 border border-r-0 border-gray-100 rounded-l-md focus:outline-none focus:border-primary focus:border-r-0"
+                        class="w-full bg-gray-50 pl-12 py-3 border border-r-0 border-gray-300 rounded-l-md focus:outline-none focus:border-primary focus:border-r-0"
                         placeholder="Search products"
                     />
                     <button class="bg-primary border border-primary text-white px-8 rounded-r-md hover:bg-transparent hover:text-primary duration-300">
@@ -38,7 +38,7 @@
                 <!-- searchbar end -->
 
                 <!-- header icons start -->
-                <div class="flex items-center space-x-4 md:space-x-6 lg:space-x-8">
+                <div class="flex items-center space-x-5 md:space-x-6 lg:space-x-8">
                     <!-- wishlist -->
                     <a href="#" class="text-center text-gray-700 hover:text-primary duration-300 relative">
                         <div class="text-2xl">
@@ -72,5 +72,48 @@
             </div>
         </header>
         <!-- header end -->
+
+        <!-- navbar start -->
+        <nav class="bg-gray-900 hidden md:block">
+            <div class="container flex gap-10">
+                <!-- all category menu start -->
+                <div class="px-8 py-3 bg-primary block items-center cursor-pointer relative text-white group">
+                    <div>
+                        <i class="ri-bar-chart-horizontal-line mr-2"></i>
+                        All Categories
+                    </div>
+                    <div
+                        class="absolute w-full left-0 top-16 shadow-xl text-gray-400 divide-y divide-gray-100 pb-2 bg-white opacity-0 invisible group-hover:opacity-100 group-hover:visible group-hover:top-full duration-300"
+                    >
+                        <a href="#" class="flex items-center gap-3 text-sm px-8 py-3 bg-white hover:bg-gray-100"> <i class="ri-computer-line"></i> Desktop </a>
+                        <a href="#" class="flex items-center gap-3 text-sm px-8 py-3 bg-white hover:bg-gray-100"> <i class="ri-macbook-line"></i> Laptop </a>
+                        <a href="#" class="flex items-center gap-3 text-sm px-8 py-3 bg-white hover:bg-gray-100"> <i class="ri-mouse-line"></i> Component </a>
+                        <a href="#" class="flex items-center gap-3 text-sm px-8 py-3 bg-white hover:bg-gray-100"> <i class="ri-camera-2-line"></i> Camera </a>
+                        <a href="#" class="flex items-center gap-3 text-sm px-8 py-3 bg-white hover:bg-gray-100">
+                            <i class="ri-smartphone-line"></i> Smartphone
+                        </a>
+                    </div>
+                </div>
+                <!-- all category menu end -->
+
+                <!-- other menu start -->
+                <div class="flex justify-between items-center text-gray-400 flex-grow">
+                    <!-- left menu -->
+                    <div class="flex space-x-8">
+                        <a href="#" class="hover:text-white duration-300">Home</a>
+                        <a href="#" class="hover:text-white duration-300">Shop</a>
+                        <a href="#" class="hover:text-white duration-300">About Us</a>
+                        <a href="#" class="hover:text-white duration-300">Contact</a>
+                    </div>
+
+                    <!-- right menu -->
+                    <div class="">
+                        <a href="#" class="hover:text-white duration-300">Login / Register</a>
+                    </div>
+                </div>
+                <!-- other menu end -->
+            </div>
+        </nav>
+        <!-- navbar end -->
     </body>
 </html>
