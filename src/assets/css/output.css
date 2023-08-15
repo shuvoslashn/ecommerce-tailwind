@@ -578,6 +578,34 @@ body{
   }
 }
 
+.absolute{
+  position: absolute;
+}
+
+.relative{
+  position: relative;
+}
+
+.-right-3{
+  right: -0.75rem;
+}
+
+.-top-1{
+  top: -0.25rem;
+}
+
+.left-4{
+  left: 1rem;
+}
+
+.right-0{
+  right: 0px;
+}
+
+.top-3{
+  top: 0.75rem;
+}
+
 .invisible{
   visibility: hidden;
 }
@@ -670,14 +698,27 @@ body{
   width: 100%;
 }
 
-.w-auto{
-  width: auto;
+
+
+.max-w-sm{
+  max-width: 24rem;
 }
 
-.w-4\/5{
-  width: 80%;
+.max-w-\[\]{
+  max-width: ;
 }
 
+.max-w-\[400\]{
+  max-width: 400;
+}
+
+.max-w-\[400px\]{
+  max-width: 400px;
+}
+
+.max-w-\[300px\]{
+  max-width: 300px;
+}
 .max-w-\[350px\]{
   max-width: 350px;
 }
@@ -710,20 +751,20 @@ body{
   justify-content: space-between;
 }
 
-.gap-4{
-  gap: 1rem;
-}
-
-.gap-8{
-  gap: 2rem;
-}
 
 .gap-10{
   gap: 2.5rem;
 }
+.space-x-8 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 0;
+  margin-right: calc(2rem * var(--tw-space-x-reverse));
+  margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
+}
 
-.gap-3{
-  gap: 0.75rem;
+.space-x-3 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.75rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .space-x-4 > :not([hidden]) ~ :not([hidden]){
@@ -1022,6 +1063,10 @@ body{
 }
 
 @media (min-width: 768px){
+  .md\:-right-3{
+    right: -0.75rem;
+  }
+
   .md\:right-0{
     right: 0px;
   }
@@ -1030,10 +1075,27 @@ body{
     display: block;
   }
 
+  .md\:inline-block{
+    display: inline-block;
+  }
+
   .md\:flex{
     display: flex;
   }
 
+  .md\:hidden{
+    display: none;
+  }
+
+  .md\:max-w-md{
+    max-width: 28rem;
+  }
+
+  .md\:space-x-8 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-x-reverse: 0;
+    margin-right: calc(2rem * var(--tw-space-x-reverse));
+    margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
+  }
   .md\:space-x-6 > :not([hidden]) ~ :not([hidden]){
     --tw-space-x-reverse: 0;
     margin-right: calc(1.5rem * var(--tw-space-x-reverse));
@@ -1042,6 +1104,29 @@ body{
 }
 
 @media (min-width: 1024px){
+  .lg\:max-w-md{
+    max-width: 28rem;
+  }
+
+  .lg\:max-w-xl{
+    max-width: 36rem;
+  }
+
+  .lg\:max-w-lg{
+    max-width: 32rem;
+  }
+
+  .lg\:max-w-\[\]{
+    max-width: ;
+  }
+
+  .lg\:max-w-\[768\]{
+    max-width: 768;
+  }
+
+  .lg\:max-w-\[768px\]{
+    max-width: 768px;
+  }
   .lg\:max-w-\[600px\]{
     max-width: 600px;
   }
