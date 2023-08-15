@@ -9,7 +9,7 @@
         <!-- Generated Stylesheet -->
         <link rel="stylesheet" href="./assets/css/output.css" />
     </head>
-    <body class="font-poppins">
+    <body>
         <!-- header start -->
         <header class="py-4 shadow-sm bg-white">
             <div class="container flex items-center justify-between">
@@ -31,7 +31,9 @@
                         class="w-full bg-gray-50 pl-12 py-3 border border-r-0 border-gray-300 rounded-l-md focus:outline-none focus:border-primary focus:border-r-0"
                         placeholder="Search products"
                     />
-                    <button class="bg-primary border border-primary text-white px-8 rounded-r-md hover:bg-transparent hover:text-primary duration-300">
+                    <button
+                        class="bg-primary border border-primary text-white px-8 rounded-r-md hover:bg-transparent hover:text-primary duration-300"
+                    >
                         Search
                     </button>
                 </div>
@@ -45,7 +47,8 @@
                             <i class="ri-heart-3-line"></i>
                         </div>
                         <p class="text-xs leading-3 font-medium md:block hidden">Wish List</p>
-                        <span class="absolute md:right-0 -right-3 -top-1 w-5 h-5 rounded-full flex items-center justify-center bg-primary text-white text-xs"
+                        <span
+                            class="absolute md:right-0 -right-3 -top-1 w-5 h-5 rounded-full flex items-center justify-center bg-primary text-white text-xs"
                             >8</span
                         >
                     </a>
@@ -56,7 +59,10 @@
                             <i class="ri-shopping-bag-2-line"></i>
                         </div>
                         <p class="text-xs leading-3 font-medium md:block hidden">Cart</p>
-                        <span class="absolute -right-3 -top-1 w-5 h-5 rounded-full flex items-center justify-center bg-primary text-white text-xs">8</span>
+                        <span
+                            class="absolute -right-3 -top-1 w-5 h-5 rounded-full flex items-center justify-center bg-primary text-white text-xs"
+                            >8</span
+                        >
                     </a>
 
                     <!-- account -->
@@ -83,12 +89,20 @@
                         All Categories
                     </div>
                     <div
-                        class="absolute w-full left-0 top-16 shadow-xl text-gray-400 divide-y divide-gray-100 pb-2 bg-white opacity-0 invisible group-hover:opacity-100 group-hover:visible group-hover:top-full duration-300"
+                        class="absolute w-full left-0 top-16 shadow-xl text-gray-700 divide-y divide-gray-100 pb-2 bg-white opacity-0 invisible group-hover:opacity-100 group-hover:visible group-hover:top-full duration-300"
                     >
-                        <a href="#" class="flex items-center gap-3 text-sm px-8 py-3 bg-white hover:bg-gray-100"> <i class="ri-computer-line"></i> Desktop </a>
-                        <a href="#" class="flex items-center gap-3 text-sm px-8 py-3 bg-white hover:bg-gray-100"> <i class="ri-macbook-line"></i> Laptop </a>
-                        <a href="#" class="flex items-center gap-3 text-sm px-8 py-3 bg-white hover:bg-gray-100"> <i class="ri-mouse-line"></i> Component </a>
-                        <a href="#" class="flex items-center gap-3 text-sm px-8 py-3 bg-white hover:bg-gray-100"> <i class="ri-camera-2-line"></i> Camera </a>
+                        <a href="#" class="flex items-center gap-3 text-sm px-8 py-3 bg-white hover:bg-gray-100">
+                            <i class="ri-computer-line"></i> Desktop
+                        </a>
+                        <a href="#" class="flex items-center gap-3 text-sm px-8 py-3 bg-white hover:bg-gray-100">
+                            <i class="ri-macbook-line"></i> Laptop
+                        </a>
+                        <a href="#" class="flex items-center gap-3 text-sm px-8 py-3 bg-white hover:bg-gray-100">
+                            <i class="ri-mouse-line"></i> Component
+                        </a>
+                        <a href="#" class="flex items-center gap-3 text-sm px-8 py-3 bg-white hover:bg-gray-100">
+                            <i class="ri-camera-2-line"></i> Camera
+                        </a>
                         <a href="#" class="flex items-center gap-3 text-sm px-8 py-3 bg-white hover:bg-gray-100">
                             <i class="ri-smartphone-line"></i> Smartphone
                         </a>
@@ -115,5 +129,35 @@
             </div>
         </nav>
         <!-- navbar end -->
+
+        <!-- hero area start -->
+        <section class="bg-cover bg-no-repeat bg-right py-36" style="background-image: url('./assets/img/hero_bg.jpg')">
+            <div class="container">
+                <h3 class="text-xl mb-2 font-semibold text-primary leading-8">
+                    Choose your favourite <i class="ri-arrow-right-up-line ml-2"></i>
+                </h3>
+                <h1 class="text-4xl font-bold text-gray-800 leading-10">
+                    Best Collections for <br />
+                    Computer & Accessories
+                </h1>
+                <p class="w-full md:w-1/3 text-sm mt-4 text-gray-600 leading-6">
+                    Lorem ipsum dolor sit amet consectetur adipiscing elit curabitur, montes hac cras tempor ornare
+                    viva.
+                </p>
+                <div class="flex sm:flex-row sm:gap-4 flex-col gap-1 mt-6">
+                    <a
+                        href="#"
+                        class="px-8 py-3 bg-primary inline-block text-white hover:bg-gray-800 sladow-lg hover:shadow-white font-medium shadow-primary duration-300 transition-all"
+                        >Shop Now</a
+                    >
+                    <a
+                        href="#"
+                        class="px-8 py-3 bg-transparent inline-block text-gray-600 hover:bg-gray-800 sladow-lg hover:shadow-white font-medium hover:text-white shadow-primary border border-gray-600 duration-300 transition-all"
+                        >New Collections</a
+                    >
+                </div>
+            </div>
+        </section>
+        <!-- hero area end -->
     </body>
 </html>
